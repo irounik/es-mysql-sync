@@ -1,10 +1,10 @@
 create table catalogue (
-	id int not null,
-	ssn int not null,
+	id int not null auto_increment,
+	ssn int not null unique,
     brand_code varchar(255) not null,
     qty int not null,
-	created_at timestamp,
-	updated_at timestamp,
+	created_at timestamp not null,
+	updated_at timestamp not null,
 	primary key(id)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
