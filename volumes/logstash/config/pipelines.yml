@@ -1,0 +1,11 @@
+# - pipeline.id: from-scratch-pipeline
+#   path.config: '/usr/share/logstash/pipeline/from-scratch.conf'
+
+# - pipeline.id: incremental-pipeline
+#   path.config: '/usr/share/logstash/pipeline/incremental.conf'
+
+- pipeline.id: catalogue-pipeline
+  path.config: '/usr/share/logstash/pipeline/catalogue.conf'
+
+- pipeline.id: catalogue-attr-pipeline
+  path.config: '/usr/share/logstash/pipeline/catalogue-attr.conf'
