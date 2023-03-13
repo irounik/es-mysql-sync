@@ -23,10 +23,21 @@ const CatalogueAttr = sequelize.define(
       type: DataTypes.STRING,
       allowNull: false,
     },
+
+    createdAt: {
+      type: 'TIMESTAMP',
+      defaultValue: sequelize.literal('now()'),
+      allowNull: false,
+    },
+    updatedAt: {
+      type: 'TIMESTAMP',
+      defaultValue: sequelize.literal('now() ON UPDATE now()'),
+      allowNull: false,
+    },
   },
   {
     underscored: true,
-    timestamps: true,
+    timestamps: false,
     freezeTableName: true,
   }
 );

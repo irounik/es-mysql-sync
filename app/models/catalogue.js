@@ -22,10 +22,20 @@ const Catalogue = sequelize.define(
     qty: {
       type: DataTypes.INTEGER,
     },
+    createdAt: {
+      type: 'TIMESTAMP',
+      defaultValue: sequelize.literal('now()'),
+      allowNull: false,
+    },
+    updatedAt: {
+      type: 'TIMESTAMP',
+      defaultValue: sequelize.literal('now()'),
+      allowNull: false,
+    },
   },
   {
     underscored: true,
-    timestamps: true,
+    timestamps: false,
     freezeTableName: true,
   }
 );
