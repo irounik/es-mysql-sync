@@ -12,6 +12,7 @@ services:
     volumes:
       # Dump files for initiating tables
       - ./data/:/docker-entrypoint-initdb.d/
+      - ./volumes/mysql:/var/lib/mysql
   elasticsearch:
     image: docker.elastic.co/elasticsearch/elasticsearch:8.6.2
     container_name: sem_elasticsearch
