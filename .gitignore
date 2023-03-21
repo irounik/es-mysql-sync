@@ -1,2 +1,3 @@
 volumes/elasticsearch
 app/node_modules
+mysql
