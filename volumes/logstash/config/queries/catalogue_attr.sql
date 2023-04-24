@@ -1,6 +1,6 @@
 SELECT 
 	mapping.ssn, 
-	attribute.attribute_name, 
+	attribute.attribute_code, 
 	mapping.value,
 	mapping.updated_at
 FROM storejini.catalogue_attribute_mapping AS mapping 
