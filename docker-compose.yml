@@ -46,8 +46,8 @@ services:
     container_name: sem_logstash
     # restart: on-failure
     depends_on:
-      - mysql
       - elasticsearch
+      - kibana
     volumes:
       - ./volumes/logstash/pipeline/:/usr/share/logstash/pipeline/
       - ./volumes/logstash/config/pipelines.yml:/usr/share/logstash/config/pipelines.yml

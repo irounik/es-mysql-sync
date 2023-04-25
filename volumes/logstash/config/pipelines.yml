@@ -2,4 +2,4 @@
   path.config: '/usr/share/logstash/pipeline/catalogue.conf'
 
 - pipeline.id: catalogue-attr-pipeline
-  path.config: '/usr/share/logstash/pipeline/catalogue-attr.conf'
+  path.config: '/usr/share/logstash/pipeline/catalogue_attr.conf'
